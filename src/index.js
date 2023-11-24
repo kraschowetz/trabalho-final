@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import App from './App.js';
-import TI from './TI/TI.js'
-import Ciencias from './Ciencias/Ciencias.js';
-import Mat from './Mat/Mat.js';
-import Projetos from './Projetos/Projetos.js'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Humanas from './Humanas/Humanas.js';
+import TI from './JavaScript/TI/TI.js'
+import Ciencias from './JavaScript/Ciencias/Ciencias.js';
+import Mat from './JavaScript/Mat/Mat.js';
+import Projetos from './JavaScript/Projetos/Projetos.js'
+import Linguagens from './JavaScript/Linguagens/Linguagens.js';
+import Humanas from './JavaScript/Humanas/Humanas.js';
+import MachineLearning from './JavaScript/TI/MachineLearning.js';
+import IA from './JavaScript/TI/IA.js';
+import Automacao from './JavaScript/TI/Automacao.js';
+import RA from './JavaScript/TI/RA.js';
+import MetaVerso from './JavaScript/TI/MetaVerso.js';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +39,30 @@ const router = createBrowserRouter([
   {
     path: "Projetos",
     element: <Projetos/>
+  },
+    {
+    path: "Linguagens",
+    element: <Linguagens/>
+  },
+  {
+    path: "TI/MachineLearning",
+    element: <MachineLearning/>
+  },
+  {
+    path: "TI/IA",
+    element: <IA/>
+  },
+  {
+    path: "TI/Automacao",
+    element: <Automacao/>
+  },
+  {
+    path: "TI/RA",
+    element: <RA/>
+  },
+  {
+    path: "TI/MetaVerso",
+    element: <MetaVerso/>
   },
 ]);
 

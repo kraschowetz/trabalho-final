@@ -1,4 +1,4 @@
-import './Style.css';
+import './Css/Style.css';
 import { Link } from 'react-router-dom';
 import { FaLastfm, FaJoint } from "react-icons/fa";
 import { HiOutlineCode, HiOutlineBookOpen, HiOutlineChartPie, HiOutlineBeaker, HiOutlineLibrary } from "react-icons/hi";
@@ -33,7 +33,9 @@ function App() {
           </tooltip>
 
           <tooltip title="Linguagens">
-            <HiOutlineBookOpen size={50} className='header-logo'/>
+            <Link to='Linguagens'>
+              <HiOutlineBookOpen size={50} className='header-logo'/>
+            </Link>
           </tooltip>
 
           <tooltip title="T.I">
